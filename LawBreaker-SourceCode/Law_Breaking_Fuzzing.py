@@ -614,13 +614,12 @@ if __name__ == "__main__":
     # arr = ['Intersection_with_Single-Direction_Roads.txt', 'lane_change_in_the_same_road.txt', 'Intersection_with_Double-Direction_Roads.txt']
     direct = 'test_cases/traffic_rule_tests/'
     # direct = 'test_cases/Violations/'
-    # arr = ['lane_change_far_away_from_the_intersection.txt']
-    # arr = ['lane_change_in_the_same_road.txt']
+    arr = ['lane_change_in_the_same_road.txt', 'Intersection_with_Double-Direction_Roads.txt', 'Single-Direction-1.txt']
     # 'Single-Direction-1.txt', 'lane_change-1.txt', 'Double-Direction-1.txt']
     # arr = ['Intersection_with_Double-Direction_Roads.txt', \
     # 'lane_change-1.txt', 'Double-Direction-1.txt']
     # arr = ['stuck1.txt']
-    arr = ['Intersection_with_Double-Direction_Roads.txt']
+    # arr = ['Intersection_with_Double-Direction_Roads.txt']
     for item in arr:
         test_scenario(direct, item)
 
