@@ -75,8 +75,8 @@ class CyberBridgeInstance:
 
 	def connect(self):
 		if self.connect_status == 'disconnected':
-			HOST = '112.137.129.158'  # The server's hostname or IP address
-			PORT = 9090        # The port used by the server
+			HOST = '70.31.197.180'  # The server's hostname or IP address
+			PORT = 41052     # The port used by the server
 
 			# with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
 				
@@ -810,6 +810,7 @@ class CyberBridgeInstance:
 			# single_result["id"] = _i["id"]
 			# single_result["type"] = _i["type"]
 			points = []
+			# if "stop_line_points" in _i:
 			for _j in _i["stop_line_points"]:
 				temp = []
 				temp.append(_j["x"])
@@ -1692,7 +1693,7 @@ class CyberBridgeInstance:
 				#     oblist[-1]["name"] = name 
 				# else:
 				num = oblist[-1]["id"]
-				oblist[-1]["name"] = self.AgentNames[num-2]
+				oblist[-1]["name"] = self.AgentNames[0]
 
 				# print(str(self.AgentNames[num-2])+ "  " +str(theta))
 

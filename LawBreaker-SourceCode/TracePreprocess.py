@@ -347,7 +347,7 @@ class Trace:
             for k in range(len(truth_state)):
                 obs_k = truth_state[k]
                 if obs_k['name'] in self.agent:
-                    truth_remaining_agent.remove(obs_k['name'])
+                    # truth_remaining_agent.remove(obs_k['name'])
                     obs_position = np.array(list(obs_k['position'].values()))  # vector
                     obs_velocity = np.array(list(obs_k['velocity'].values())) # vector
                     obs_heading = obs_k['theta']  # float

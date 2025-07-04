@@ -120,8 +120,8 @@ class get_map_info:
             for _i in trafficSign:
                 single_element = {}
                 single_element["id"] = _i["id"]["id"]
-                if single_element["id"].find("stopsign") != -1:
-                    single_element["type"] = "stopsign"
+                if single_element["id"].find("stop_sign") != -1:
+                    single_element["type"] = "stop_sign"
                     stop_line_points = []
                     if _i.__contains__("stopLineList"):                        
                         stop_line_points = _i["stopLineList"][0]["segmentList"][0]["lineSegment"]["pointList"]

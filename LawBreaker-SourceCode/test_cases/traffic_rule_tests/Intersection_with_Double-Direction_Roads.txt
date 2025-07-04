@@ -1,6 +1,6 @@
 // intersection with two double direction roads
 map_name = "san_francisco";
-time = 12:00;
+time = 21:00;
 weather = {rain:0.5, snow: 0.1, wetness: heavy};
 evn = Environment(time, weather);
 
